@@ -1,27 +1,131 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Website Pertama Saya</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Tree Daniel </title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfhUjhOCD9V3IoU3oQuupAbHNaQlxNaFqcdwcgsPCyBQ&s=10') no-repeat center center fixed; /* Ganti dengan URL gambar Luffy Gear 5 Anda */
+            background-size: cover;
+            color: #333;
+            position: relative;
+            overflow-x: hidden;
+        }
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5); /* Overlay gelap untuk kontras teks */
+            z-index: -1;
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        h1 {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+            animation: slideIn 1s ease-out;
+        }
+        @keyframes slideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            position: relative;
+            z-index: 1;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.9); /* Semi-transparan untuk efek glassmorphism */
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            backdrop-filter: blur(10px); /* Efek blur untuk glassmorphism */
+        }
+        .card:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+        .card-header {
+            background: linear-gradient(45deg, #4CAF50, #45a049);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .card-body {
+            padding: 20px;
+        }
+        .card-body p {
+            margin: 0 0 15px 0;
+            color: #333;
+            line-height: 1.6;
+        }
+        .btn {
+            display: inline-block;
+            background: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: background 0.3s ease, transform 0.2s ease;
+            font-weight: bold;
+        }
+        .btn:hover {
+            background: #45a049;
+            transform: scale(1.1);
+        }
+        .icon {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Selamat Datang!</h1>
-    <p>Ini website sederhana yang di-host di Netlify</p>
-  </header>
-
-  <main>
-    <button id="klikTombol">Klik Aku!</button>
-    <p id="pesan"></p>
-  </main>
-
-  <footer>
-    <p>© 2025 Website Pertama Saya</p>
-  </footer>
-
-  <script src="script.js"></script>
+    <h1>Link Tree Daniel</h1>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://files.catbox.moe/3a6i1d.png" alt="Saweria Logo" class="icon">
+                Saweria
+            </div>
+            <div class="card-body">
+                <p>Dukung Dann694 Dengan Saweria!</p>
+                <a href="https://saweria.co/Dann694" target="_blank" class="btn">Kunjungi Saweria</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <img src="https://files.catbox.moe/c70dya.png" alt="Sociabuzz Logo" class="icon">
+                Sociabuzz
+            </div>
+            <div class="card-body">
+                <p>Dukung Dann694 dengan SociaBuzz!</p>
+                <a href="https://sociabuzz.com/dann49/give" target="_blank" class="btn">Kunjungi Sociabuzz</a>
+            </div>
+        </div>
+    </div>
 </body>
-</html>
+                  </html>
+                  
